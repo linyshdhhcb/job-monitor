@@ -1,0 +1,42 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+
+# IDE / 编辑器配置
+.idea/
+.vscode/
+*.iml
+
+# 日志文件
+logs/
+*.log
+
+# 数据库与本地数据
+data/*.db
+*.sqlite3
+*.sqlite
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 调试文件
+debug_page.html
+
+# Python 打包/缓存
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# pytest / 覆盖率
+.pytest_cache/
+.cache/
+htmlcov/
+.coverage*
