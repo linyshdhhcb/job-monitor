@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新岗位提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header .count {
+            font-size: 56px;
+            font-weight: bold;
+            margin: 15px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 25px;
+        }
+        
+        .company-section {
+            margin-bottom: 25px;
+            border: 1px solid #e8e8e8;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .company-section:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .company-header {
+            background: linear-gradient(90deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 17px;
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+        
+        .company-header .icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .company-header .badge {
+            margin-left: auto;
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+        }
+        
+        .job-list {
+            padding: 10px 20px;
+        }
+        
+        .job-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .job-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a73e8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 6px;
+        }
+        
+        .job-title:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+        
+        .job-meta {
+            font-size: 13px;
+            color: #888;
+        }
+        
+        .job-meta .location {
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .job-url {
+            font-size: 12px;
+            color: #aaa;
+            word-break: break-all;
+            margin-top: 4px;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e8e8e8;
+        }
+        
+        .footer p {
+            color: #888;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        
+        .footer .tips {
+            color: #667eea;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #e0e0e0 50%, transparent 100%);
+            margin: 20px 0;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 22px;
+            }
+            
+            .header .count {
+                font-size: 42px;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+            
+            .company-header {
+                font-size: 15px;
+                padding: 12px 15px;
+            }
+            
+            .job-list {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 新岗位提醒</h1>
+            <div class="count">{total_count}</div>
+            <p class="subtitle">发现 {total_count} 个新发布的职位，快去看看吧！</p>
+        </div>
+        
+        <div class="content">
+            {job_sections}
+        </div>
+        
+        <div class="footer">
+            <p class="tips">💡 提示：点击岗位标题可直接跳转到招聘页面</p>
+            <div class="divider"></div>
+            <p>📧 系统自动监控 | 生成时间: {timestamp}</p>
+            <p>© 2024 岗位监控系统 | 本邮件由系统自动发送，请勿直接回复</p>
+        </div>
+    </div>
+</body>
+</html>
