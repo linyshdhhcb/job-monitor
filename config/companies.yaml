@@ -39,16 +39,6 @@ companies:
     enabled: true
     keywords: []
 
-  - name: "百度"
-    url: "https://talent.baidu.com/jobs/list?recruitType=INTERN"
-    job_selector: "[class*='post-item']"
-    title_selector: "[class*='post-title-content'] span"
-    location_selector: "[class*='post-subtitle'] span:nth-child(2)"
-    detail_selector: "[class*='post-subtitle'] span:nth-child(1)"
-    requires_selenium: true
-    enabled: true
-    keywords: []
-
   - name: "哔哩哔哩"
     url: "https://jobs.bilibili.com/campus/positions?code=01&practiceTypes=1&type=0"
     job_selector: ".bili-item-card"

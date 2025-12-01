@@ -12,7 +12,18 @@
 - **可扩展公司列表**：通过 [config/companies.yaml](cci:7://file:///c:/Code_Concenter/PyCharm/JobMonitorSystem/config/companies.yaml:0:0-0:0) 自定义要监控的公司和页面 
 - **反爬与重试机制**：随机 UA、请求间隔、重试次数可配置，尽量降低被封风险  
 
+## 当前已适配公司
 
+以下公司已在 `config/companies.yaml` 中预置好示例配置（实际可根据需要增删）：
+
+- [网易](https://hr.163.com/job-list.html?workType=1)
+- [美团](https://zhaopin.meituan.com/web/position?hiringType=2_6&jfJgList=11001_1100109)
+- [快手](https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/?workLocationCode=domestic&positionCategoryCode=J0012&pageNum=1)
+- [哔哩哔哩](https://jobs.bilibili.com/campus/positions?code=01&practiceTypes=1&type=0)
+- [携程](https://campus.ctrip.com/campus-recruitment/trip/37757/#/jobs?keyword=&page=1&anchorName=jobsList)
+- [小红书](https://job.xiaohongshu.com/campus/position?campusRecruitTypes=term_intern%2Cterm_regular&positionName=&jobTypes=tech)
+- [滴滴](https://app.mokahr.com/apply/didiglobal/6222#/jobs?zhineng=48460)
+- [哈啰](https://careers.hellobike.com/#/recruit/%E5%AE%9E%E4%B9%A0%E7%94%9F%E6%8B%9B%E8%81%98)
 
 ---
 
@@ -290,10 +301,12 @@ Set WshShell = Nothing
 
 ## 免责声明
 
-- 本工具仅供个人学习使用
-- 请遵守目标网站的robots.txt规则
-- 请控制请求频率，不要给网站造成压力
-- 不要将获取的数据用于商业用途
+- 本工具仅供个人学习、技术研究使用，不对任何使用结果承担法律责任
+- 请严格遵守各目标网站的服务条款（Terms of Service）与 robots.txt 规则
+- 请合理设置访问频率，避免对目标网站造成过大压力或影响其正常服务
+- 不得将本工具获取的数据用于任何形式的商业用途或非法用途
+- 使用本工具进行的所有行为及其后果均由使用者本人承担，与本人无关
+- 如目标网站对爬虫/自动访问有禁止性规定，请立即停止对该网站的所有访问
 
 ---
 
