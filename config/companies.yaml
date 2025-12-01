@@ -1,0 +1,110 @@
+companies:
+  - name: "网易"
+    url: "https://hr.163.com/job-list.html?workType=1"
+    job_selector: ".posi-list-card"
+    title_selector: ".f-title .f-toe"
+    location_selector: ".tag.f-toe"
+    detail_selector: ".base-detail"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "美团"
+    url: "https://zhaopin.meituan.com/web/position?hiringType=2_6&jfJgList=11001_1100109"
+    job_selector: ".position_list_item"
+    title_selector: ".postion_name .title"
+    location_selector: ".split_line_box_item.city span"
+    detail_selector: ".split_line_box_item:nth-child(4) span"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "快手-第1页"
+    url: "https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/?workLocationCode=domestic&positionCategoryCode=J0012&pageNum=1"
+    job_selector: ".ant-table-tbody tr"
+    title_selector: "td:first-child div"
+    location_selector: "td:nth-child(3)"
+    detail_selector: "td:nth-child(2)"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "快手-第2页"
+    url: "https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/?workLocationCode=domestic&positionCategoryCode=J0012&pageNum=2"
+    job_selector: ".ant-table-tbody tr"
+    title_selector: "td:first-child div"
+    location_selector: "td:nth-child(3)"
+    detail_selector: "td:nth-child(2)"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "百度"
+    url: "https://talent.baidu.com/jobs/list?recruitType=INTERN"
+    job_selector: "[class*='post-item']"
+    title_selector: "[class*='post-title-content'] span"
+    location_selector: "[class*='post-subtitle'] span:nth-child(2)"
+    detail_selector: "[class*='post-subtitle'] span:nth-child(1)"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "哔哩哔哩"
+    url: "https://jobs.bilibili.com/campus/positions?code=01&practiceTypes=1&type=0"
+    job_selector: ".bili-item-card"
+    title_selector: ".item-title .text"
+    location_selector: ".bili-infotags span:first-child"
+    detail_selector: ".bili-infotags span:nth-child(2)"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "携程"
+    url: "https://campus.ctrip.com/campus-recruitment/trip/37757/#/jobs?keyword=&page=1&anchorName=jobsList"
+    job_selector: "a[class*='link-']"
+    title_selector: ".target-color-container"
+    location_selector: "[class*='ellipsis-'] [class*='sd-foundation-body-secondary']:last-child .no-adaptive-tooltip"
+    detail_selector: "[class*='ellipsis-'] [class*='sd-foundation-body-secondary']:nth-child(3) .no-adaptive-tooltip"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "小红书"
+    url: "https://job.xiaohongshu.com/campus/position?campusRecruitTypes=term_intern%2Cterm_regular&positionName=&jobTypes=tech"
+    job_selector: "a.block.p-3"
+    title_selector: ".text-title.text-h4"
+    location_selector: ".flex.items-center span:last-child"
+    detail_selector: ".text-description.line-clamp-2"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "滴滴"
+    url: "https://app.mokahr.com/apply/didiglobal/6222#/jobs?zhineng=48460"
+    job_selector: ".link-2tgd22te-3 a"
+    title_selector: ".title-20V7ljm-Id"
+    location_selector: ".locations-32aEgVWFz_"
+    detail_selector: ".status-2vTS8JvF_D"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "哈啰-校招"
+    url: "https://careers.hellobike.com/#/recruit/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98"
+    job_selector: ".list .job-item"
+    title_selector: "header h4"
+    location_selector: ".addr"
+    detail_selector: ".dept-name span"
+    requires_selenium: true
+    enabled: true
+    keywords: []
+
+  - name: "哈啰-实习"
+    url: "https://careers.hellobike.com/#/recruit/%E5%AE%9E%E4%B9%A0%E7%94%9F%E6%8B%9B%E8%81%98"
+    job_selector: ".list .job-item"
+    title_selector: "header h4"
+    location_selector: ".addr"
+    detail_selector: ".dept-name span"
+    requires_selenium: true
+    enabled: true
+    keywords: []

@@ -1,0 +1,20 @@
+# 邮件配置
+# QQ邮箱SMTP设置
+
+email:
+  # SMTP服务器配置
+  smtp_server: "smtp.qq.com"
+  smtp_port: 465
+  use_ssl: true
+
+  # 发件人信息（用你的QQ邮箱）
+  sender_email: "xxxxxxxxxxxxx@qq.com"
+  sender_password: "xxxxxxxxxxxxxx"  # QQ邮箱授权码，不是QQ密码
+
+  # 收件人信息
+  receiver_email: "xxxxxxxxxxxxxx@qq.com"
+
+  # 邮件设置
+  subject_prefix: "【新岗位提醒】"
+  max_retry: 3
+  retry_delay: 5  # 重试间隔秒数

@@ -1,0 +1,51 @@
+# 系统设置
+
+schedule:
+  # 定时任务时间（24小时制）
+  # 13:00 开始检查，14:00左右发送邮件
+  # 19:00 开始检查，20:00左右发送邮件
+  check_times:
+    - hour: 13
+      minute: 0
+    - hour: 19
+      minute: 0
+
+  # 检查间隔（分钟）- 在检查时段内，每隔多少分钟检查一次
+  check_interval_minutes: 5
+
+  # 单次检查超时时间（秒）
+  request_timeout: 30
+
+spider:
+  # 是否使用代理
+  use_proxy: false
+
+  # 请求间隔（秒）- 每个公司之间的请求间隔
+  request_delay_min: 2
+  request_delay_max: 5
+
+  # 最大重试次数
+  max_retries: 3
+
+  # 是否只爬取匹配关键词的岗位
+  filter_by_keywords: true
+
+database:
+  # 数据库文件路径
+  db_path: "data/jobs.db"
+
+  # 保留历史数据天数
+  keep_days: 30
+
+logging:
+  # 日志级别: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+
+  # 日志文件路径
+  file_path: "logs/job_monitor.log"
+
+  # 日志文件最大大小（MB）
+  max_size_mb: 10
+
+  # 保留日志文件数量
+  backup_count: 5
